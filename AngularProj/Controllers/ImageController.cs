@@ -32,7 +32,7 @@ namespace MvcPL.Controllers
             var File = new File()
             {
                 MimeType = file.ContentType,
-                Data = new byte[file.ContentLength]
+                Data = new byte[file.ContentLength],
             };
 
 
