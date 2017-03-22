@@ -1,0 +1,10 @@
+﻿<div>
+
+    <p ng-show="!isEdit">
+        {{siteDesc}}
+    </p>
+    <textarea ng-show="isEdit" ng-model="siteDesc" id="descTextArea"></textarea>
+    <input ng-show="!isEdit" type="button" ng-click="Edit()" id="editBtn" value="Edit" />
+    <input ng-show="isEdit" type="button" ng-click="Cancel()" id="cancelBtn" value="Cancel" />
+    <input ng-show="isEdit" type="button" ng-click="Save()" id="saveBtn" value="Save" />
+</div>
